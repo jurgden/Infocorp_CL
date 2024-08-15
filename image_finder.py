@@ -9,7 +9,7 @@ image_directory = 'assets/images/banner/'
 required_resolution = (1920, 1080)  # Example resolution
 
 # File to store the valid image paths
-output_json = 'assets/images/banner_images.json'
+output_json = 'assets/images/banner/banner_images.json'
 
 def validate_image_resolution(image_path, required_resolution):
     """Check if the image matches the required resolution."""
