@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const bannerContainer = document.getElementById('banner-slideshow');
-    const jsonPath = 'assets/images/banner_images.json'; // Path to your JSON file
+    const jsonPath = 'assets/images/banner/banner_images.json'; // Path to your JSON file
 
     // Function to fetch image paths from JSON
     async function fetchImagePaths() {
