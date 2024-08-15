@@ -30,6 +30,11 @@ def scan_images(directory, required_resolution):
 
 def write_json_file(image_paths, output_json):
     """Write the valid image paths to a JSON file."""
+    # Ensure the output directory exists
+    output_directory = os.path.dirname(output_json)
+    if not os.path.exists(output_directory):
+        os.makedirs(output_directory)
+
     with open(output_json, 'w') as json_file:
         json.dump(image_paths, json_file, indent=4)
 
